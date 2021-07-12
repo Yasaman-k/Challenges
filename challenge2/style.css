@@ -1,0 +1,70 @@
+html,body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.card{
+    display: flex;
+    /* background-color: aqua; */
+    width: 100%;
+    margin-top: 200px;
+    justify-content: center;
+
+}
+
+.card-title{
+    text-transform: uppercase;
+
+
+
+    
+}
+button{
+   
+    padding: 10px;
+    border-radius: 20px;
+    border: white;
+    background-color: white;
+}
+button:hover{
+    color: tomato;
+    cursor: pointer;
+}
+
+.card-body{
+font-size: 15px;
+font-family: 'lexend desa';
+}
+
+.card-footer{
+
+}
+
+.card-sub{
+    width: 20%;
+    /* font-family: "Big Shoulders Display"; */
+    font-family: 'myfont';
+    padding: 30px;
+}
+
+/* --------- fonts ---------- */
+
+@font-face {
+    /* font-family: 'Big Shoulders Display' ; */
+     font-family: 'myfont' ;
+    
+    src:url(fonts/Big_Shoulders_Display/BigShouldersDisplay-Black.ttf);
+    
+  
+}
+
+@font-face {
+    /* font-family: 'Big Shoulders Display' ; */
+     font-family: 'lexend desa' ;
+    
+    src:url(fonts/lexend-deca-cufonfonts-webfont/LexendDecaRegular.woff);
+    
+  
+}

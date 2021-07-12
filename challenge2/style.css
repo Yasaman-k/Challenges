@@ -2,53 +2,105 @@ html,body{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     
+}
+p,h1{
+    margin: 0px;
+    padding: 0px;
 }
 
 .card{
     display: flex;
-    /* background-color: aqua; */
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
     justify-content: center;
+    color: rgba(240, 255, 255, 0.658);
 
+}
+
+.card-sub{
+    width: 20%;
+    font-family: 'myfont';
+    padding: 40px 0px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1; 
 }
 
 .card-title{
+    margin-top: 40px;
     text-transform: uppercase;
-
-
-
     
 }
-button{
-   
-    padding: 10px;
+.card-body{
+    font-size: 15px;
+    font-family: 'lexend desa';
+    margin-top: 40px;
+    padding-right: 70px;
+    line-height: 1.8;
+}
+button{  
+    padding: 10px 20px 10px 20px ;
     border-radius: 20px;
-    border: white;
     background-color: white;
+    font-weight: 500;
+    font-family: 'lexend desa';
 }
 button:hover{
     color: tomato;
     cursor: pointer;
 }
 
-.card-body{
-font-size: 15px;
-font-family: 'lexend desa';
-}
 
 .card-footer{
-
+    margin-top: 80px;
+}
+.card-footer button:hover{
+    border:1px solid white;
+    color: white;
 }
 
-.card-sub{
-    width: 20%;
-    /* font-family: "Big Shoulders Display"; */
-    font-family: 'myfont';
-    padding: 30px;
+.card-first{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.card-first button{
+    color: hsl(31, 77%, 52%);
+    border:1px solid hsl(31, 77%, 52%);
+}
+.card-first button:hover{
+
+    background-color: hsl(31, 77%, 52%);
+  
 }
 
+/*--*/
+.card-second{
+    background-color: hsl(184, 100%, 22%);
+}
+.card-second button{
+    color: hsl(184, 100%, 22%);
+    border:1px solid hsl(184, 100%, 22%);
+}
+.card-second button:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+/*--*/
+.card-third{
+    background-color:  hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.card-third button{
+    color: hsl(179, 100%, 13%);
+    border:1px solid hsl(179, 100%, 13%);
+}
+.card-third button:hover{
+    background-color:hsl(179, 100%, 13%) ;
+
+}
 /* --------- fonts ---------- */
 
 @font-face {

@@ -25,8 +25,12 @@ button:hover{
 .card{
     display: flex;
     width: 100%;
-    margin-top: 100px;
+    /* height: 100%; */
+    /* margin-top: 100px; */
+    height: 100vh;
     justify-content: center;
+    align-items: center;
+
    
 
 }

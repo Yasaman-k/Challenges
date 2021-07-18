@@ -1,9 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 html,
 body {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -35,8 +35,13 @@ textarea {
   /* background-repeat: no-repeat;
   background-size: 100px 100px; */
 
-  background-image: url("images/bg-pattern-bottom.svg"),
-    url("images/bg-pattern-top.svg");
+  background-image: url("images/bg-pattern-top.svg") ,
+  url("images/bg-pattern-bottom.svg");
+    
+  background-position: top -334px left -20px , bottom -380px right -145px;
+  background-repeat: no-repeat;
+  background-size: 721px 731px, 900px 700px;
+
 
   background-color: hsl(185, 75%, 39%);
 
@@ -93,6 +98,7 @@ svg {
   padding: 0px 2px 0px 2px;
 }
 .name {
+  color: hsl(229, 23%, 23%);
   font-weight: 700;
   font-size: 18px;
 }

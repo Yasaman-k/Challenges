@@ -18,7 +18,6 @@ body {
   margin-top: 44px;
 }
 a {
-  /* color: inherit; */
   text-decoration: none;
 }
 a,
@@ -47,26 +46,25 @@ nav {
   margin: 0px;
   padding: 0px;
 }
+.align-items-center {
+  align-items: center;
+}
 
+/* ------------ */
 .navbar-black {
   top: 0;
   position: fixed;
   width: 100%;
   overflow: hidden;
-
-  padding-left: 250px;
-  padding-right: 250px;
-
   background: rgba(0, 0, 0, 0.8);
-
   backdrop-filter: saturate(180%) blur(20px);
   z-index: 100;
 }
-.align-items-center {
-  align-items: center;
-}
+
 .navbar-black-sub {
   height: 44px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 .navbar-item {
   font-size: 13px;
@@ -142,7 +140,6 @@ nav {
   width: 18px;
   background-color: #06c;
   border-radius: 50%;
-  display: inline-block;
   margin-top: 4px;
 }
 .arrow-right {
@@ -202,29 +199,26 @@ nav {
 .bg-img1 {
   background-image: url("../image/iphone_12_updated__jepm2xpxncuy_large.jpg"); /* The image used */
   background-color: inherit; /* Used if the image is unavailable */
-  /* height: 80vh; */
-  min-height: 77vh;
-  background-position: top center; /* Center the image */
+  background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+  height: 580px;
 }
 .bg-img2 {
   background-image: url("../image/iphone_12_pro_us__e5oyysg4k0ya_large.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
 
-  min-height: 77vh;
-  background-position: top center; /* Center the image */
+  background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+  height: 580px;
 }
 .bg-img3 {
   background-image: url("../image/img1-l.jpg"); 
   background-color: #cccccc; /* Used if the image is unavailable */
 
-  min-height: 77vh;
-  background-position: top center; /* Center the image */
+  height: 580px;
+  background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+
 }
 
 .white-text .title,
@@ -240,60 +234,55 @@ nav {
 .child1 {
   background-image: url(../image/img3.jpg);
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: top center; 
+  background-position: bottom center; 
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; 
-  min-height: 90vh;
+  height: 580px;
 }
 
 .child2 {
   background-image: url(../image/promo_watch_series_6_lte__f8lrasjnry2y_large.jpg);
   background-color: #cccccc; 
-  background-position: top center; /* Center the image */
+  background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  min-height: 90vh;
+
+  height: 580px;
 }
 
 .grid-item{
-  min-height:90vh ;
+  height:580px ;
 }
 
 .child3 {
  
   background-image: url(../image/fantazi.jpg);
   background-color: #cccccc;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 90vh;
+
+  height: 580px;
 
 
 }
 .child4 {
   background-image: url(../image/promo_arcade__e7ps46tldi62_large.jpg);
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: top center; /* Center the image */
+  background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  height: 90vh;
-  min-height: 90vh;
+  height: 580px;
 }
 .child5 {
   background-image: url(../image/tile__cauwwcyyn9hy_large.jpg);
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: top center; /* Center the image */
+  background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  min-height: 90vh;
+  height: 580px;
 }
 .child6 {
-  background-image: url(../image/promo_schmigadoon__dfst42rah0eq_large_2x.jpg);
+  background-image: url(../image/hey.jpg);
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: top center; /* Center the image */
+  background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  min-height: 90vh;
+  height: 580px;
 }
 
 .grid-container {
@@ -441,6 +430,7 @@ span{
   padding-top: 24px;
 }
 .footer-body h5 {
+  letter-spacing: normal;
   color: #1d1d1f;
   font-weight: 600;
   font-size: 12px !important;
@@ -514,10 +504,14 @@ li {
   text-decoration: underline;
 }
 .footer {
-  padding: 17px 250px 0px 250px;
+
+  max-width: 980px;
+  margin: 0 auto;
+
+  padding: 17px 0px 0px 0px;
   color: gray;
-  /* font-size: 13px; */
   font-size: 1rem;
+  letter-spacing: normal;
 }
 footer li {
   padding-bottom: 0.8em;

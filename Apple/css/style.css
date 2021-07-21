@@ -202,7 +202,7 @@ nav {
 }
 
 .divider {
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .bg-img1 {
   background-image: url("../image/iphone_12_updated__jepm2xpxncuy_large.jpg"); /* The image used */
@@ -210,8 +210,10 @@ nav {
   background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   /* height: 580px; */
-  height: 569px;
+  height: 580px;
 }
+
+
 .bg-img2 {
   background-image: url("../image/iphone_12_pro_us__e5oyysg4k0ya_large.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */

@@ -7,7 +7,7 @@
 
 body,
 html {
-  font-family: "Inter", "Lexend Deca", "SF Pro Display", "SF Pro Icons",
+  font-family:  "SF Pro Display", "SF Pro Icons",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 17px;
   color: #1d1d1f;
@@ -205,7 +205,7 @@ nav {
   margin-top: 12px;
 }
 .bg-img1 {
-  background-image: url("../image/iphone_12_updated__jepm2xpxncuy_large.jpg"); /* The image used */
+  background-image: url("../image/iphone_12_updated__jepm2xpxncuy_large.jpg");
   background-color: inherit; /* Used if the image is unavailable */
   background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -484,3 +484,4 @@ footer {
 .sc::before {
   content: " \2197";
 }
+

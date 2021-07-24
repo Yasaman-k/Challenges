@@ -209,28 +209,23 @@ nav {
   margin-top: 12px;
 }
 .bg-img1 {
-  /* background-image: url("../image/iphone_12_updated__jepm2xpxncuy_large.jpg"); */
-  background-image: url("../image/first.jpg");
+  background-image: url("../image/iphone_12_updated__jepm2xpxncuy_large.jpg");
+  /* background-image: url("../image/first.jpg"); */
+  /* background-image: url("../image/sec1/iphone_12_updated__jepm2xpxncuy_medium.jpg"); */
   background-color: inherit;
   background-position: bottom center;
   background-repeat: no-repeat;
-  min-height: 580px;
-  /* width: 100vh; */
+  height: 580px;
+  /* height: 590px;
+  background-size: 1068px 617px; */
+  /* height: 1060px;
+  height: 700px;
+  background-size: 1060px 700px; */
  
 }
-.new{
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  max-width: 1500px;
-  margin: 0 auto;
-}
-.section-white{
-  width: 100%;
-}
+
 .bg-img2 {
-    min-height: 580px;
+  height: 580px;
   background-image: url("../image/iphone_12_pro_us__e5oyysg4k0ya_large.jpg");
   background-color: #cccccc;
   background-position: bottom center;
@@ -240,10 +235,11 @@ nav {
 }
 
 
-/* @media screen and (max-width: 1068px) {
+@media screen and (min-width: 1500px) {
   .bg-img1{
-    background-image: url("../image/first.jpg");
-    height: 800px;
+    background-image: url("../image/sec1/iphone_12_updated__jepm2xpxncuy_largetall_2x.jpg");
+    background-size: 3010px 736px;
+    height: 692px;
   }
 
   .bg-img2{
@@ -253,8 +249,10 @@ nav {
   }
   .bg-img3{
     background-image: url("../image/img1-1.jpg");
+
+    
   }
-} */
+}
 
 .bg-img3 {
   background-image: url("../image/img1-l.jpg");

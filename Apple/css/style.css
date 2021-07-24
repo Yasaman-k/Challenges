@@ -212,30 +212,58 @@ nav {
   background-image: url("../image/iphone_12_updated__jepm2xpxncuy_large.jpg");
   /* background-image: url("../image/first.jpg"); */
   /* background-image: url("../image/sec1/iphone_12_updated__jepm2xpxncuy_medium.jpg"); */
-  background-color: inherit;
+  /* background-color: inherit;
   background-position: bottom center;
   background-repeat: no-repeat;
-  height: 580px;
+  height: 580px; */
   /* height: 590px;
   background-size: 1068px 617px; */
   /* height: 1060px;
   height: 700px;
   background-size: 1060px 700px; */
+
+  background-position: bottom center;
+height: 624px;
+background-size: 3010px 624px;
+background-repeat: no-repeat;
  
 }
 
 .bg-img2 {
-  height: 580px;
+ 
   background-image: url("../image/iphone_12_pro_us__e5oyysg4k0ya_large.jpg");
-  background-color: #cccccc;
+
+
   background-position: bottom center;
-  background-repeat: no-repeat;
-  /* width: 100vh; */
+height: 624px;
+background-size: 3010px 624px;
+background-repeat: no-repeat;
 
 }
 
+.bg-img3 {
+  /* height: 580px; */
+/* height: 738px;
+background-size: 3008px 738px;
+background-image: url("../image/sec3/hero_ipad_pro_non_avail__fcrsmhs4b7ma_largetall.jpg");
 
-@media screen and (min-width: 1500px) {
+background-color: #cccccc;
+
+background-position: bottom center;
+background-repeat: no-repeat; */
+
+
+/* width: 3010px; */
+/* width: 100%; */
+
+background-position: bottom center;
+height: 624px;
+background-size: 3010px 624px;
+background-repeat: no-repeat;
+background-image: url("../image/sec3/hero_ipad_pro_non_avail__fcrsmhs4b7ma_large.jpg");
+}
+
+/* @media screen and (min-width: 1500px) {
   .bg-img1{
     background-image: url("../image/sec1/iphone_12_updated__jepm2xpxncuy_largetall_2x.jpg");
     background-size: 3010px 736px;
@@ -244,24 +272,55 @@ nav {
 
   .bg-img2{
 
-    background-image: url("../image/iphone_12_pro_us__e5oyysg4k0ya_medium.jpg") !important;
+    background-image: url("../image/iphone_12_pro_us__e5oyysg4k0ya_large.jpg") !important;
+    background-size: 3010px 736px;
+    height: 692px;
 
   }
   .bg-img3{
-    background-image: url("../image/img1-1.jpg");
 
-    
+    background-image: url("../image/sec3/hero_ipad_pro_non_avail__fcrsmhs4b7ma_largetall.jpg");
+    background-size: 3008px 738px !important;
+    height: 738px !important;
+    width: 3008px !important;
+    overflow: hidden;
+
   }
+} */
+.main [data-module-template="heroes"] .bg-img3 {
+    width: 3010px;
+    height: 624px;
+    background-size: 3010px 624px;
+    background-repeat: no-repeat;
+    background-image: url("../image/sec3/hero_ipad_pro_non_avail__fcrsmhs4b7ma_large.jpg");
+  }
+
+main{
+  position: relative;
+    max-width: 2560px;
+    margin: 0 auto;
 }
 
-.bg-img3 {
-  background-image: url("../image/img1-l.jpg");
-  background-color: #cccccc;
-  height: 580px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  /* width: 100vh; */
+@media only screen and (min-width: 1069px) and (min-height: 776px){
+  .bg-img1{
+    background-image: url("../image/sec1/iphone_12_updated__jepm2xpxncuy_largetall_2x.jpg");
+    background-size: 3008px 738px !important;
+    height: 738px !important;
+  }
+  .bg-img2{
+    background-image: url("../image/iphone_12_pro_us__e5oyysg4k0ya_large.jpg") !important;
+    background-size: 3008px 738px !important;
+    height: 738px !important;
+  }
+  .bg-img3{
+    background-image: url("../image/sec3/hero_ipad_pro_non_avail__fcrsmhs4b7ma_largetall.jpg");
+    background-size: 3008px 738px !important;
+    height: 738px !important;
+  }
+
 }
+
+
 
 .white-text .title,
 .white-text .title-sub {
@@ -279,7 +338,7 @@ nav {
 
 .child1 {
   background-image: url(../image/img3.jpg);
-  background-color: #cccccc; /* Used if the image is unavailable */
+ 
   background-position: bottom center;
   background-repeat: no-repeat; /* Do not repeat the image */
   height: 580px;
@@ -314,7 +373,7 @@ nav {
 }
 .child4 {
   background-image: url(../image/promo_arcade__e7ps46tldi62_large.jpg);
-  background-color: #cccccc; /* Used if the image is unavailable */
+
   background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   height: 580px;

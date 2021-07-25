@@ -545,3 +545,13 @@ footer {
 .sc::before {
   content: " \2197";
 }
+
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:600;
+	src:local('☺'), url("/fonts/sf-pro-display_semibold.woff2") format("woff2"), url("/fonts/sf-pro-display_semibold.woff") format("woff"), url("/fonts/sf-pro-display_semibold.ttf") format("truetype");
+	/* (C) 2019 Apple Inc. All rights reserved.
+ */
+}

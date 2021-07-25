@@ -1,6 +1,4 @@
-h2{
-	color: red !important;
-}
+
 
 @font-face {
 	font-family:'SF Pro Display';
@@ -113,14 +111,7 @@ h2{
  */
 }
 
-@font-face {
-	font-family:'SF Pro Display';
-	font-style:normal;
-	font-weight:600;
-	src:local('☺'), url("/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2") format("woff2"), url("/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff") format("woff"), url("/wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.ttf") format("truetype");
-	/* (C) 2019 Apple Inc. All rights reserved.
- */
-}
+
 
 @font-face {
 	font-family:'SF Pro Display';

@@ -3,9 +3,9 @@
 	font-family:'SF Pro Display';
 	font-style:normal;
 	font-weight:600;
-	src:url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2) format("woff2"), 
-	url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff) format("woff"),
-	 url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.ttf) format("truetype");
+	src:url(./wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff2) format("woff2"), 
+	url(./wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.woff) format("woff"),
+	url(./wss/fonts/SF-Pro-Display/v3/sf-pro-display_semibold.ttf) format("truetype");
 
 }
 

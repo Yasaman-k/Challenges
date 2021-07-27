@@ -128,11 +128,14 @@ nav {
 /*-------------*/
 
 .title {
+  font-family:'SF Pro Display';
   padding-top: 47px;
   font-size: 56px !important;
   line-height: 1.07143;
-  font-weight: 600;
   letter-spacing: -0.005em;
+
+
+  font-weight: 600;
   font-style: normal;
 }
 .title-sub {

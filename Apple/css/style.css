@@ -6,7 +6,7 @@
 
 body,
 html {
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
   font-size: 17px;
   color: #1d1d1f;
@@ -149,26 +149,13 @@ nav {
 
 .title-body {
   margin-top: 5px;
-
-}
-.title-body p {
   letter-spacing: 0.626px !important;
   color: #86868b;
-  font-family: "SF Pro Text";
-  font-style: normal;
-  font-weight: 400;
 }
+
 /*----------------*/
-.footbal {
-  justify-content: space-between;
-  align-items: center;
-}
-.footbal .title,
-.footbal .title-sub {
-  text-transform: uppercase !important;
-  font-size: 40px;
-  font-weight: 800px;
-}
+
+
 .grid .title {
   font-size: 38px !important;
 }
@@ -320,8 +307,8 @@ main {
 .child5 {
   background-image: url(../image/tile__cauwwcyyn9hy_large.jpg);
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: bottom center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: bottom center; 
+  background-repeat: no-repeat; 
   height: 580px;
 }
 .child6 {
@@ -499,7 +486,6 @@ li {
 .footer {
   max-width: 980px;
   margin: 0 auto;
-
   padding: 17px 0px 0px 0px;
   color: gray;
   font-size: 1rem;
@@ -514,10 +500,3 @@ footer {
   background-color: #f5f5f7;
 }
 
-.test {
-  object-fit: contain;
-}
-
-.sc::before {
-  content: " \2197";
-}

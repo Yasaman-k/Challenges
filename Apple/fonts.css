@@ -9,16 +9,28 @@
 
 }
 
+
+
 @font-face {
 	font-family:'SF Pro Display';
 	font-style:normal;
+	font-weight:400;
+	src:url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.eot);
+	src:url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2) format("woff2"),
+	 url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff) format("woff"),
+	  url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.ttf) format("truetype");
+
+}
+
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:italic;
 	font-weight:400;
 	src: url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular-italic.woff2) format("woff2"),
 	 url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular-italic.woff) format("woff"), 
 	 url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular-italic.ttf) format("truetype");
 
 }
-
 
 @font-face {
 	font-family:'SF Pro Display';
@@ -215,15 +227,7 @@
  */
 }
 
-@font-face {
-	font-family:'SF Pro Display';
-	font-style:normal;
-	font-weight:400;
-	src:url('/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.eot');
-	src:local('☺'), url("/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2") format("woff2"), url("/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff") format("woff"), url("/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.ttf") format("truetype");
-	/* (C) 2019 Apple Inc. All rights reserved.
- */
-}
+
 
 @font-face {
 	font-family:'SF Pro Text';

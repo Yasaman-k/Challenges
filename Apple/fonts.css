@@ -15,10 +15,10 @@
 	font-family:'SF Pro Display';
 	font-style:normal;
 	font-weight:400;
-	src:url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.eot);
-	src:url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2) format("woff2"),
-	 url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff) format("woff"),
-	  url(wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.ttf) format("truetype");
+	src:url(./wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.eot);
+	src:url(./wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2) format("woff2"),
+	 url(./wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff) format("woff"),
+	  url(./wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.ttf) format("truetype");
 
 }
 

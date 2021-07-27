@@ -240,7 +240,8 @@ main {
   max-width: 2560px;
   margin: 0 auto;
 }
-
+/* 1487 */
+/* 1680 */
 @media only screen and (min-width: 1069px) and (min-height: 776px) {
   .bg-img1 {
     background-image: url("../image/sec1/iphone_12_updated__jepm2xpxncuy_largetall.jpg");
@@ -276,9 +277,8 @@ main {
 
 .child1 {
   background-image: url(../image/img3.jpg);
-
   background-position: bottom center;
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-repeat: no-repeat; 
   height: 580px;
 }
 
@@ -295,7 +295,6 @@ main {
   background-color: #cccccc;
   background-position: bottom center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-
   height: 580px;
 }
 
@@ -325,7 +324,7 @@ main {
   background-image: url(../image/hey.jpg);
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: bottom center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-repeat: no-repeat; 
   height: 580px;
 }
 

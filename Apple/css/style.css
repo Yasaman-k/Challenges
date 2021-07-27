@@ -138,6 +138,8 @@ nav {
 }
 
 .title-sub {
+  font-family:'SF Pro Display';
+  font-style: normal;
   font-size: 28px;
   margin-top: 6px;
   line-height: 1.10722;

@@ -412,6 +412,10 @@ main {
 .title-vasat {
   padding-top: 24px;
 }
+.footer-body{
+  padding-top:20px;
+   width: 100%;
+}
 .footer-body h5 {
   letter-spacing: normal;
   color: #1d1d1f;
@@ -499,4 +503,8 @@ footer li {
 }
 footer {
   background-color: #f5f5f7;
+}
+
+.footer-col{
+  width: 20%;
 }

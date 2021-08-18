@@ -24,7 +24,7 @@ body {
 /*----------------*/
 .star {
   border-radius: 10px;
-  padding: 15px 70px 15px 30px;
+  padding: 20px 70px 20px 30px;
   max-width: 470px;
 }
 .star p {
@@ -42,7 +42,7 @@ body {
   
   , bottom 0 right 0;
   background-repeat: no-repeat;
-  background-size: 50% 50%, 50% 50%;
+  background-size: 50% 50%, 70% 50%;
 
   background-color: white;
 
@@ -58,6 +58,7 @@ body {
 }
 
 .title h1 {
+  line-height: 3rem;
   color: var(--verydark);
   font-weight: 700;
   font-size: 3rem;

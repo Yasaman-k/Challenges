@@ -200,6 +200,7 @@ height: 300px;
 
 .card .card-header p:last-child{
   color: var(--softpink);
+margin-top: 3px;
   font-weight: 500;
 }
 .card .card-header img{

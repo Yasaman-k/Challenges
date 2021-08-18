@@ -212,6 +212,7 @@ height: 300px;
   color: var(--lightgrayish);
   font-weight: 500;
   margin-top: 30px;
+  line-height: 1.3rem;
 }
 .card-s{
   flex-basis: 23rem;

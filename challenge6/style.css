@@ -60,8 +60,11 @@ button {
     background-position: top center;
     position: relative;
     height: -webkit-fill-available;
-    text-align: center;
+
     margin: 11rem 2rem 2rem 2rem;
+  }
+  .card__text h1{
+    text-align: center;
   }
  
   .card__img{
@@ -74,12 +77,15 @@ button {
     background-position: -54rem -24rem; 
   }
   .card__text{
-    padding: 9rem 1rem !important;
+    padding: 9rem 1rem 0 1rem !important;
   }
   .img-woman1 {
     position: absolute;
     z-index: 1;
     top: 2rem;
+  }
+  .container{
+    height: none;
   }
 }
 @media (min-width: 880px) {

@@ -1,0 +1,170 @@
+html,
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --verydark: hsl(238, 29%, 16%);
+  --softred: hsl(14, 88%, 65%);
+
+  --softviolet: hsl(273, 75%, 66%);
+  --softblue: hsl(240, 73%, 65%);
+
+  --verydarkgayish: hsl(237, 12%, 33%);
+  --darkgayishblue: hsl(240, 6%, 50%);
+
+  --lightgayshblue: hsl(240, 5%, 91%);
+}
+
+ul {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  font-family: "Kumbh Sans", sans-serif;
+  cursor: pointer;
+}
+.container {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-color: palevioletred;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 41rem;
+  width: 73rem;
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  margin: 2rem;
+}
+@media (max-width: 880px) {
+  .card {
+    flex-direction: column;
+    background-image: url("images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+    background-position: top center;
+    position: relative;
+    height: 60rem;
+    text-align: center;
+    padding: 17rem 1rem !important;
+  }
+  .img-mokab{
+   display: none;
+  }
+  .card__img{
+    background-position: -54rem -24rem; 
+  }
+  .card__text{
+    padding: 0 1rem !important;
+  }
+  .img-woman1 {
+    position: absolute;
+    z-index: 1;
+    top: 6rem;
+
+
+  }
+}
+@media (min-width: 880px) {
+  .img-woman1 {
+    display: none;
+
+
+  }
+}
+.card__text {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.card__text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.card__img {
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  flex-basis: 100%;
+  background-position: -54rem -24rem;
+  position: relative;
+}
+.img-woman {
+  background-image: url("images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+  height: -webkit-fill-available;
+ height: 100%;
+  background-position: -6rem;
+}
+
+.img-mokab {
+  left: -10rem;
+  top: 17rem;
+  position: absolute;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgba(190, 190, 190, 0.5) 1px solid;
+  padding: 1rem 0;
+}
+
+.card__content {
+  padding: 1rem 0;
+}
+
+.accordion__btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: left;
+  color: var(--verydarkgayish);
+}
+.accordion__btn:hover {
+  color: var(--softred);
+}
+
+.fontWeight {
+  font-weight: 700;
+}
+
+.after {
+  float: right;
+}
+.accordion__btn--active {
+  transform: rotate(180deg);
+}
+.accordion__content {
+  overflow: hidden;
+  transition: max-height 0.2s;
+  max-height: 0;
+  border-bottom: 1px rgb(220 220 220 / 35%) solid;
+  color: var(--darkgayishblue);
+}
+.accordion__content p {
+  margin-bottom: 1rem;
+}
+
+.accordion__btn--active + .accordion__content {
+  display: block;
+}
+
+.maxH {
+  max-height: 100px !important ;
+}

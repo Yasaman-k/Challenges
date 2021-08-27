@@ -59,9 +59,13 @@ button {
     flex-basis: 100%;
     background-position: top center;
     position: relative;
-    height: 60rem;
+    height: -webkit-fill-available;
     text-align: center;
-    padding: 17rem 1rem !important;
+    margin: 11rem 2rem 2rem 2rem;
+  }
+ 
+  .card__img{
+    display: none;
   }
   .img-mokab{
    display: none;
@@ -70,14 +74,12 @@ button {
     background-position: -54rem -24rem; 
   }
   .card__text{
-    padding: 0 1rem !important;
+    padding: 9rem 1rem !important;
   }
   .img-woman1 {
     position: absolute;
     z-index: 1;
-    top: 6rem;
-
-
+    top: 2rem;
   }
 }
 @media (min-width: 880px) {

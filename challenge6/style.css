@@ -81,7 +81,7 @@ button {
   .img-woman1 {
     position: absolute;
     z-index: 1;
-    top: 2rem;
+    top: 10rem;
   }
   .container{
     height: none;

@@ -59,9 +59,8 @@ button {
     flex-basis: 100%;
     background-position: top center;
     position: relative;
-    height: -webkit-fill-available;
 
-    margin: 19rem 2rem 2rem 2rem;
+    margin: 19rem 2rem 2rem 2rem !important;
   }
   .card__text h1{
     text-align: center;

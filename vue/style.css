@@ -20,4 +20,33 @@ button {
     background: none;
     outline: none;
     border: none;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 20px;
+}
+
+.mobile-menu-container {
+    background-color: aqua;
+    padding: 10px 0;
+    /* height: 100vh;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10rem; */
+}
+
+.mobile-menu-container p {
+    margin: 5px;
+    border-bottom: gray 1px solid;
+    padding-bottom: 10px;
 }

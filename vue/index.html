@@ -13,6 +13,26 @@
     <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app" v-cloak>
+
+        <header>
+            <template v-if="ok">
+                <button @click="mobileMenu = !mobileMenu">
+                    <svg viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="100" height="20" rx="8"></rect>
+                        <rect y="30" width="100" height="20" rx="8"></rect>
+                        <rect y="60" width="100" height="20" rx="8"></rect>
+                    </svg>
+                </button>
+                <div v-if="mobileMenu" class="mobile-menu-container">
+                    <p>page 1</p>
+                    <p>page 2</p>
+                    <p>page 3</p>
+                </div>
+
+                <div v-else></div>
+            </template>
+        </header>
+
         {{ message }}
         <input v-model="message" />
 
@@ -26,18 +46,6 @@
 
         <h1 v-show="ok">Hello!</h1>
         <h1 v-show="!ok">Hello!</h1>
-
-        <template v-if="ok">
-            <button @click="awesome = !awesome">
-                <svg viewBox="0 0 100 80" width="40" height="40">
-                    <rect width="100" height="20" rx="8"></rect>
-                    <rect y="30" width="100" height="20" rx="8"></rect>
-                    <rect y="60" width="100" height="20" rx="8"></rect>
-                </svg>
-            </button>
-            <div v-if="awesome">vue is awesome</div>
-            <div v-else>oh no</div>
-        </template>
 
         <div v-if="isVisible" class="box"></div>
         <div v-else-if="isVisible2" class="box two"></div>
@@ -53,13 +61,6 @@
 
     </div>
 
-    <template v-if="ok">
-        <h1>Title</h1>
-        <p>paragraph 1</p>
-        <p>paragraph 2</p>
-    </template>
-
-
     <script>
         let app = Vue.createApp({
             data: function () {
@@ -67,7 +68,7 @@
                     message: 'shirin joon',
                     isVisible: false,
                     isVisible2: false,
-                    awesome: true,
+                    mobileMenu: false,
                     ok: true,
                 }
             },

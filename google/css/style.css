@@ -22,14 +22,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .align-s {
   align-self: center;
 }
 
 .df {
-    display: flex;
-  }
-  
+  display: flex;
+}
+
 
 /* .profile-img {
     background-size: 32px 32px;
@@ -69,11 +70,9 @@ a:hover {
   font-size: 13px;
 }
 
-.search-icon {
-}
+.search-icon {}
 
-.mic-icon:hover {
-}
+.mic-icon:hover {}
 
 .google-logo {
   margin-top: 80px;
@@ -121,7 +120,8 @@ input:focus {
 .border-input input {
   border: 1px solid #dfe1e5;
 }
-.shadow-input :hover > .s {
+
+.shadow-input :hover>.s {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(143, 132, 132, 0.3) 0px 1px 3px -1px;
   border-radius: 30px;
@@ -137,6 +137,7 @@ input:focus {
   color: white;
   padding: 10px 25px 10px 25px !important;
 }
+
 .btn-blue:hover {
   background-color: #1a73e8d7 !important;
   cursor: pointer;
@@ -161,12 +162,14 @@ input:focus {
   left: 0;
   bottom: 0;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2;
   padding: 20px;
 }
+
 .footer-child {
   color: #70757a;
   margin-right: 15px;
@@ -209,4 +212,26 @@ input:focus {
   border-right: 5px solid transparent;
   border-bottom: 5px solid black;
   position: absolute;
+}
+
+.parent {
+  width: 400px;
+  height: 200px;
+  background-color: pink;
+}
+
+.child {
+  width: 200px;
+  height: 100px;
+  background-color: #1a73e8;
+}
+
+.parent:hover {
+  background-color: rgb(120, 120, 216);
+}
+
+.child:hover {
+  width: 200px;
+  height: 100px;
+  background-color: red;
 }

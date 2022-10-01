@@ -1,0 +1,23 @@
+.box {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+.two {
+    background-color: aqua;
+}
+
+.three {
+    background-color: blue;
+}
+
+[v-clock] {
+    display: none;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+}

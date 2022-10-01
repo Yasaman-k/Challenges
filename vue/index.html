@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app" v-cloak>
+        {{ message }}
+        <input v-model="message" />
+
+        <hr />
+
+        <template v-if="ok">
+            <h1>Title</h1>
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+        </template>
+
+        <h1 v-show="ok">Hello!</h1>
+        <h1 v-show="!ok">Hello!</h1>
+
+        <template v-if="ok">
+            <button @click="awesome = !awesome">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20" rx="8"></rect>
+                    <rect y="30" width="100" height="20" rx="8"></rect>
+                    <rect y="60" width="100" height="20" rx="8"></rect>
+                </svg>
+            </button>
+            <div v-if="awesome">vue is awesome</div>
+            <div v-else>oh no</div>
+        </template>
+
+        <div v-if="isVisible" class="box"></div>
+        <div v-else-if="isVisible2" class="box two"></div>
+        <div v-else class="box three"></div>
+
+        <!-- <button v-on:click="isVisible = true">Show box</button>
+        <div v-if="isVisible" class="box"></div> -->
+
+        <button v-on:click="isVisible = !isVisible">Show box</button>
+        <div v-if="isVisible" class="box"></div>
+
+        <button @click="toggleBox">Toggle Box</button>
+
+    </div>
+
+    <template v-if="ok">
+        <h1>Title</h1>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+    </template>
+
+
+    <script>
+        let app = Vue.createApp({
+            data: function () {
+                return {
+                    message: 'shirin joon',
+                    isVisible: false,
+                    isVisible2: false,
+                    awesome: true,
+                    ok: true,
+                }
+            },
+            methods: {
+                togglebox() {
+
+                }
+            },
+        })
+        app.mount('#app')
+
+        // const { createApp } = Vue
+        // createApp({
+        //     data() {
+        //         return {
+        //             message: 'Hello Vue!'
+        //         }
+        //     }
+        // }).mount('#app')
+    </script>
+</body>
+
+</html>

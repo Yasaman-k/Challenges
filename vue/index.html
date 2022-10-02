@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue 3 basics</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app" v-cloak>
-
         <header>
             <template v-if="ok">
-                <button @click="mobileMenu = !mobileMenu">
+                <button v-on:click.left="toggleBox">
                     <svg viewBox="0 0 100 80" width="40" height="40">
                         <rect width="100" height="20" rx="8"></rect>
                         <rect y="30" width="100" height="20" rx="8"></rect>
@@ -33,8 +35,8 @@
             </template>
         </header>
 
-        {{ message }}
-        <input v-model="message" />
+        {{ text }}
+        <input @keyup.enter="enterFunc(text + '!!!!!!!!')" v-model="text" />
 
         <hr />
 
@@ -51,21 +53,24 @@
         <div v-else-if="isVisible2" class="box two"></div>
         <div v-else class="box three"></div>
 
-        <!-- <button v-on:click="isVisible = true">Show box</button>
+        <!-- <button @click="isVisible = true">Show box</button>
         <div v-if="isVisible" class="box"></div> -->
 
-        <button v-on:click="isVisible = !isVisible">Show box</button>
+        <button @click="isVisible = !isVisible">Show box</button>
         <div v-if="isVisible" class="box"></div>
 
-        <button @click="toggleBox">Toggle Box</button>
+        <hr>
+        <login-form />
+
 
     </div>
 
     <script>
-        let app = Vue.createApp({
+        const { createApp } = Vue
+        createApp({
             data: function () {
                 return {
-                    message: 'shirin joon',
+                    text: 'your name',
                     isVisible: false,
                     isVisible2: false,
                     mobileMenu: false,
@@ -73,21 +78,63 @@
                 }
             },
             methods: {
-                togglebox() {
-
+                toggleBox(e) {
+                    this.mobileMenu = !this.mobileMenu
+                    e.preventDefault(); //@click.prevent
+                },
+                enterFunc(text) {
+                    console.log(text);
+                }
+            }
+        }).component('login-form', {
+            template: `
+                <form @submit.prevent="handleSubmit">
+                    <h1>{{ title }}</h1>
+                    <custom-input v-model="email" :modelValue="email" :label="emailLabel" class="input-form" />
+                    <custom-input v-model="password" :modelValue="password" :label="passwordLabel"/>
+                    <button class="submit">submit</button>
+                </form>
+            `,
+            component: ['custom-input'],
+            data() {
+                return {
+                    title: 'Login Form',
+                    email: '',
+                    password: '',
+                    emailLabel: 'Email',
+                    passwordLabel: 'Password',
                 }
             },
+            methods: {
+                handleSubmit() {
+                    console.log(this.email, this.password);
+                }
+            }
+        }).component('custom-input', {
+            template: `
+                <label>
+                    {{ label }}
+                    <input type="text" v-model="inputValue">
+                </label>
+            `,
+            props: ['label', 'modelValue'],
+            computed: {
+                inputValue: {
+                    get() {
+                        return this.modelValue
+                    },
+                    set(value) {
+                        this.$emit('update:modelValue', value)
+                    }
+                }
+            },
+            // data() {
+            //     return {
+            //         inputValue: ''
+            //     }
+            // }
         })
-        app.mount('#app')
-
-        // const { createApp } = Vue
-        // createApp({
-        //     data() {
-        //         return {
-        //             message: 'Hello Vue!'
-        //         }
-        //     }
-        // }).mount('#app')
+            .mount('#app')
     </script>
 </body>
 

@@ -1,0 +1,1 @@
+vaqti submit.prevent mizari ya e.preventDefault() dar vaqe dg safhe refresh nemishe

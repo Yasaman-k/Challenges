@@ -14,12 +14,12 @@
         background-color: red;
     }
 </style>
-
+<!-- 1.12 -->
 <body id="app">
     <script src="https://unpkg.com/vue@3"></script>
     <button @click="toggleBox">click</button>
     <test-box v-if="visible" class="box"></test-box>
-    
+
     <script>
         const { createApp } = Vue
         createApp({
@@ -32,7 +32,10 @@
                 toggleBox() {
                     this.visible = !this.visible
                 }
-            }
+            },
+            updated() {
+                console.log("updated")
+            },
         }).component('test-box',{
             template:`
                 <div class="box"></div>

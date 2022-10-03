@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+</style>
+
+<body id="app">
+    <script src="https://unpkg.com/vue@3"></script>
+    <button @click="toggleBox">click</button>
+    <test-box v-if="visible" class="box"></test-box>
+    
+    <script>
+        const { createApp } = Vue
+        createApp({
+            data() {
+                return {
+                    visible: false,
+                }
+            },
+            methods: {
+                toggleBox() {
+                    this.visible = !this.visible
+                }
+            }
+        }).component('test-box',{
+            template:`
+                <div class="box"></div>
+            `,
+            created() {
+                console.log('created');
+            },
+            mounted() {
+                console.log('mounted');
+            },
+            unmounted() {
+                console.log('unmounted');
+            },
+        })
+        .mount('#app')
+    </script>
+
+
+</body>
+
+</html>

@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     font-size: 20px;
 }
@@ -56,6 +55,15 @@ button {
 input {
     display: block;
     padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid black;
+}
+
+input:focus {
+    outline-color: rgb(78, 195, 156);
+    outline-style: solid;
+    outline-width: 2px;
 }
 
 button.submit {
@@ -64,7 +72,11 @@ button.submit {
     padding: 15px 30px;
     color: white;
     font-weight: 600;
-    border-radius: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    filter: contrast(200%)
 }
 
 form h1 {
@@ -73,5 +85,9 @@ form h1 {
 }
 
 .input-form {
-    margin-top: 1000px;
+    margin-top: 30px;
+}
+
+.input-form input {
+    margin-top: 10px;
 }
